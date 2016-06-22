@@ -1,4 +1,6 @@
 class TodosController < ApplicationController
+
+  before_filter :authenicate
   def index
     @todos = Todo.all
   end
