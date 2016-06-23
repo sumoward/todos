@@ -1,5 +1,5 @@
-<%= form_for :session, url: session do |form| %>
+<%= form_for :session, url: sessions_path do |form| %>
     <%= form.label :email %>
     <%= form.text_field :email %>
-    <%= form.submit "Sign In" %>
+    <%= form.submit "Sign in" %>
 <% end %>
